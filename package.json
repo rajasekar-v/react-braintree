@@ -1,6 +1,6 @@
 {
   "name": "react-braintree-impl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Braintree credit card UI implementation",
   "main": "build/index.js",
   "peerDependencies": {

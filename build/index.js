@@ -40464,14 +40464,11 @@ var CreditCard = function (_Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
-          isEdit = _props.isEdit,
           expiryMonth = _props.expiryMonth,
           expiryMonths = _props.expiryMonths,
           expiryYear = _props.expiryYear,
           years = _props.years,
-          mode = _props.mode,
           expirationError = _props.expirationError,
-          cvv = _props.cvv,
           primary = _props.primary,
           formCvv = _props.formCvv,
           fields = _props.fields,
@@ -40484,6 +40481,15 @@ var CreditCard = function (_Component) {
           Select = _props.Select,
           containerClassName = _props.containerClassName;
 
+      var isEdit = true;
+      var mode = 'creditCard';
+      var cvv = {};
+      fields.map(function (field) {
+        if (field.name === 'cvv') {
+          cvv = field;
+        }
+        return null;
+      });
       return _react2.default.createElement(
         'div',
         { className: containerClassName ? containerClassName : '' },

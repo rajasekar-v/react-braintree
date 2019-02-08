@@ -8,14 +8,11 @@ import InputGroup1 from './utils/InputGroup'
 export default class CreditCard extends Component {
   render () {
     const {
-      isEdit,
       expiryMonth,
       expiryMonths,
       expiryYear,
       years,
-      mode,
       expirationError,
-      cvv,
       primary,
       formCvv,
       fields,
@@ -28,6 +25,15 @@ export default class CreditCard extends Component {
       Select,
       containerClassName
     } = this.props;
+    const isEdit = true;
+    const mode = 'creditCard';
+    let cvv = {}
+    fields.map(field => {
+      if (field.name === 'cvv') {
+        cvv = field
+      }
+      return null
+    })
     return (
       <div className={containerClassName ? containerClassName : ''}>
         <div className="row m-0 creditCard">
