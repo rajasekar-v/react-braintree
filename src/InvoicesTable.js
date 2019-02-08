@@ -4,8 +4,6 @@ import moment from 'moment'
 import momentLocalizer from 'react-widgets-moment'
 import { IF } from './utils/nullchecker'
 
-import './scss/invoicesTable.scss';
-
 moment.locale('en')
 momentLocalizer()
 
@@ -148,7 +146,7 @@ const InvoicesTable = ({
                           className={`${
                             isRemarkEnabled ? 'col-1' : 'col-2'
                             } text-capitalize text-center ${getColorName(status)}`}>
-                          <RenderStatus
+                    Render      <RenderStatus
                             status={status}
                             parent={parent}
                             invoiceId={invoiceId}

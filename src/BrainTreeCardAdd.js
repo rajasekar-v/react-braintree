@@ -6,7 +6,6 @@ import {
   hostedFields as brainTreehostedFields
 } from 'braintree-web'
 import jquery from 'jquery/src/jquery'
-import './scss/creditcardAdd.scss';
 
 let creditCardformValid = false
 

@@ -1,18 +1,11 @@
 {
-  "name": "react-braintree-impl",
-  "version": "1.0.3",
+  "name": "react-braintree",
+  "version": "1.0.0",
   "description": "Braintree credit card UI implementation",
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^15.6.0",
-    "react-dom": "^15.6.0",
-    "approvejs": "^3.1.2",
-    "braintree-web": "^3.42.0",
-    "jquery": "^3.3.1",
-    "moment": "^2.24.0",
-    "react-widgets": "^4.4.9",
-    "react-widgets-moment": "^4.0.25",
-    "bootstrap": "^4.1.2"
+    "react-dom": "^15.6.0"
   },
   "dependencies": {
     "approvejs": "^3.1.2",
@@ -22,8 +15,7 @@
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "react-widgets": "^4.4.9",
-    "react-widgets-moment": "^4.0.25",
-    "bootstrap": "^4.1.2"
+    "react-widgets-moment": "^4.0.25"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -49,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rajasekar-v/react-braintree.git"
+    "url": ""
   },
   "license": "MIT",
   "keywords": [

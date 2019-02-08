@@ -1,0 +1,63 @@
+@import './variables';
+@import './colors';
+
+.credit-card {
+  .secure-message {
+    background-color: $message-background-color;
+    padding: 10px 20px;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+  }
+  .payment-form {
+    padding: 15px 30px !important;
+  }
+  .form-control {
+    padding: 0;
+    border: {
+      top: none !important;
+      left: none !important;
+      right: none !important;
+      bottom: solid 1px map-get($bootstrap-colors, 'lightgrey');
+    }
+    background: none;
+    font-family: inherit;
+    &::placeholder {
+      color: map-get($bootstrap-colors, 'red');
+      opacity: 1;
+      font-size: 12px;
+    }
+  }
+  .cvv-field {
+    padding: 5px;
+    width: 100%;
+    &::placeholder {
+      color: map-get($bootstrap-colors, 'red');
+      opacity: 1;
+      font-size: 12px;
+    }
+  }
+  .cvv-card-icon {
+    padding: 2px 5px;
+  }
+  .Select {
+    border: none;
+    width: 100% !important;
+  }
+  .Select-clear {
+    display: none;
+  }
+  .custom-control-input:checked ~ .custom-control-indicator {
+    color: #fff;
+    background-color: #47c8fb;
+  }
+  .custom-control-input:focus {
+    color: #fff;
+    background-color: #47c8fb;
+  }
+  .model-content-background {
+    .modal-content {
+      background-color: #f2f3f2;
+    }
+  }
+}

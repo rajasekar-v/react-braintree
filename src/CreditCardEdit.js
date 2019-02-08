@@ -25,10 +25,11 @@ export default class CreditCard extends Component {
       onPrimaryClick,
       closeModal,
       handlePayment,
-      Select
+      Select,
+      containerClassName
     } = this.props;
     return (
-      <div>
+      <div className={containerClassName ? containerClassName : ''}>
         <div className="row m-0 creditCard">
           {!isEdit && (
             <div className="col-sm-6 mt-4 pl-4">
